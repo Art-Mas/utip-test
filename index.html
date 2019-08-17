@@ -1,0 +1,44 @@
+<head>
+  <script src="main.js"></script>
+  <meta charset="utf-8">
+  <style>
+    .btns {
+      display: flex;
+    }
+
+    .btns > *:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    #color-btns, #pens {
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<canvas id="canvas" width="300" height="150"
+        style="background-color:#eee; border: 1px solid #ccc; margin:10px;">
+  Ваш браузер не поддерживает Canvas
+</canvas>
+
+<div id="color-btns" class="btns"></div>
+<div id="pens" class="btns"></div>
+
+
+<div>
+  <h3>Текущие: </h3>
+  <div class="btns">
+    <div id="curr-color"></div>
+    <div id="curr-pen"></div>
+  </div>
+</div>
+
+<div>
+  <button id="save">Сохранить</button>
+  <button id="clear">Очистить</button>
+</div>
+
+</body>
